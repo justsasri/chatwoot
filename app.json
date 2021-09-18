@@ -44,7 +44,7 @@
     "SMTP_PASSWORD": {
        "description" : "SMPT Password",
        "value": "SMPT_PASSWORD"
-    }
+    },
     "RACK_ENV": {
       "description": "Environment for rack middleware.",
       "value": "production"
