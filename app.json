@@ -25,6 +25,10 @@
       "description": "Environment for rails middleware.",
       "value": "production"
     },
+    "DATABASE_URL": {
+      "description": "Postgre database url string (ssl).",
+      "value": "postgres://<USERNAME>:<PASSWORD>@<HOST>:<PORT>/<DATABASE>?sslmode=require"
+    },
     "FRONTEND_URL": {
       "description": "Public root URL of the Chatwoot installation. This will be used in the emails.",
       "value": "https://CHANGE.herokuapp.com"
