@@ -13,10 +13,38 @@
   ],
   "success_url": "/",
   "env": {
+    "DATABASE_URL": {
+      "description": "Postgre database url string (ssl).",
+      "value": "postgres://<USERNAME>:<PASSWORD>@<HOST>:<PORT>/<DATABASE>?sslmode=require"
+    },
+    "VAPID_PRIVATE_KEY": {
+         "description" : "Push Notification VAPID private key",
+         "value": "VAPID_PRIVATE_KEY"
+    },
+    "VAPID_PUBLIC_KEY": {
+       "description" : "Push Notification VAPID public key",
+       "value": "VAPID_PUBLIC_KEY"
+    },
     "SECRET_TOKEN": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
+    "MAILER_SENDER_EMAIL": {
+       "description" : "could user either `email@yourdomain.com` or `BrandName <email@yourdomain.com>`",
+       "value": "BrandName <email@yourdomain.com>"
+    },
+    "SMTP_ADDRESS": {
+       "description" : "SMPT Address",
+       "value": "smpt.example.com"
+    },
+    "SMTP_USERNAME": {
+       "description" : "SMPT username",
+       "value": "SMTP_USERNAME"
+    },
+    "SMTP_PASSWORD": {
+       "description" : "SMPT Password",
+       "value": "SMPT_PASSWORD"
+    }
     "RACK_ENV": {
       "description": "Environment for rack middleware.",
       "value": "production"
@@ -45,7 +73,7 @@
     }
   },
   "image": "heroku/ruby",
-  "addons": [ "heroku-redis", "heroku-postgresql"],
+  "addons": [ "heroku-redis"],
   "buildpacks": [
     {
       "url": "heroku/ruby"
