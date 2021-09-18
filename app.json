@@ -32,6 +32,54 @@
     "INSTALLATION_ENV": {
       "description": "Installation method used for Chatwoot.",
       "value": "heroku"
+    },
+    "ACTIVE_STORAGE_SERVICE": {
+         "description" : "Active storage type",
+         "value": "s3_compatible"
+    },
+    "STORAGE_ACCESS_KEY_ID": {
+         "description" : "Storage id",
+         "value": "YOUR STORAGE ID"
+    },
+    "STORAGE_SECRET_ACCESS_KEY": {
+         "description" : "Storage secret key",
+         "value": "YOUR STORAGE KEY"
+    },
+    "STORAGE_BUCKET_NAME": {
+         "description" : "Storage bucket name",
+         "value": "somebucket"
+    },
+    "STORAGE_REGION": {
+       "description" : "Storage region",
+       "value": "sgp1"
+    },
+    "STORAGE_ENDPOINT": {
+       "description" : "Storage endpoint",
+       "value": "https://sgp1.digitaloceanspaces.com"
+    },
+    "VAPID_PRIVATE_KEY": {
+         "description" : "Push Notification VAPID private key",
+         "value": "VAPID_PRIVATE_KEY"
+    },
+    "VAPID_PUBLIC_KEY": {
+       "description" : "Push Notification VAPID public key",
+       "value": "VAPID_PUBLIC_KEY"
+    },
+    "MAILER_SENDER_EMAIL": {
+       "description" : "could user either `email@yourdomain.com` or `BrandName <email@yourdomain.com>`",
+       "value": "BrandName <email@yourdomain.com>"
+    },
+    "SMTP_ADDRESS": {
+       "description" : "SMPT Address",
+       "value": "smpt.example.com"
+    },
+    "SMTP_USERNAME": {
+       "description" : "SMPT username",
+       "value": "SMTP_USERNAME"
+    },
+    "SMTP_PASSWORD": {
+       "description" : "SMPT Password",
+       "value": "SMPT_PASSWORD"
     }
   },
   "formation": {
